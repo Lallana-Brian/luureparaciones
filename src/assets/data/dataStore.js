@@ -1,6 +1,7 @@
-import swiper1 from "../images/swiper/swiper1.jpg";
-import swiper2 from "../images/swiper/swiper2.jpg";
-import swiper3 from "../images/swiper/swiper3.jpg";
+import swiper2 from "../images/swiper/swiper2.webP";
+import swiper3 from "../images/swiper/swiper3.webP";
+import swiper1 from "../images/swiper/swiper1.webP";
+import phoneImg from "../images/swiper/phoneRepair.webP";
 
 export const slidesData = [
   {
@@ -16,8 +17,6 @@ export const slidesData = [
     alt: "Imagen 3",
   },
 ];
-
-import phoneImg from "../images/swiper/phoneRepair.jpg";
 
 export const featuredImages = [
   {
