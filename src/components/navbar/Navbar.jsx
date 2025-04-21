@@ -31,15 +31,16 @@ export default function Navbar() {
 
         <Btn
           className="px-2 font-medium flex items-center gap-2"
+          bgColor="bg-white"
+          hoverUnderline={true}
+          onClick={() => window.open("https://wa.me/5493777674366", "_blank")}
           text={
             <>
               <FaWhatsapp className="w-6 h-6 text-green-500" />
-              +3777-674-366
+              3777674366
             </>
           }
-          bgColor="bg-white"
-          hoverUnderline={true}
-        />
+        ></Btn>
       </div>
 
       {/* Menú hamburguesa desplegable (solo en móvil) */}
@@ -75,15 +76,16 @@ export default function Navbar() {
         </div>
         <Btn
           className="px-4 font-medium flex items-center gap-2"
+          onClick={() => window.open("https://wa.me/5493777674366", "_blank")}
+          hoverUnderline={true}
+          bgColor="bg-white"
           text={
             <>
-              <FaWhatsapp className="w-5 h-5 text-green-500" />
-              +3777-674-366
+              <FaWhatsapp className="w-6 h-6 text-green-500" />
+              3777674366
             </>
           }
-          bgColor="bg-white"
-          hoverUnderline={true}
-        />
+        ></Btn>
       </div>
     </nav>
   );
