@@ -40,4 +40,18 @@ export const featuredImages = [
     bgColor: "bg-container",
     textColor: "text-black",
   },
+  {
+    title: "Instalación de software",
+    subtitle: "Pantallas, teclados, sistemas operativos.",
+    image: phoneImg,
+    bgColor: "bg-container",
+    textColor: "text-black",
+  },
+];
+
+export const items = [
+  "Cambio rápido.",
+  "Entrega garantizada.",
+  "Precios accesibles.",
+  "Satisfacción del cliente.",
 ];
