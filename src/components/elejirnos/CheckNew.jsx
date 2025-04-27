@@ -1,4 +1,4 @@
-const CheckIcon = () => (
+const CheckNew = () => (
   <span className="inline-flex items-center justify-center bg-yellow-400 text-black rounded-full p-1">
     <svg
       className="w-4 h-4"
@@ -11,3 +11,5 @@ const CheckIcon = () => (
     </svg>
   </span>
 );
+
+export default CheckNew;

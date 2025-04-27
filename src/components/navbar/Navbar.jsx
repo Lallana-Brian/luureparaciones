@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed w-full top-0 left-0 px-6 py-4 bg-body text-title z-50 shadow-md">
-      {/* Fondo con degradado (opcional) */}
+      {/* Fondo con degradado */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-transparent to-transparent pointer-events-none z-0" />
 
       {/* Contenido principal del nav */}
@@ -42,38 +42,104 @@ export default function Navbar() {
           isOpen ? "flex flex-col" : "hidden"
         }`}
       >
-        <a href="#" className="py-2 hover:text-yellow-400">
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            setIsOpen(false); // Opcional: cerrar menú luego de click
+          }}
+          className="py-2 hover:text-button"
+        >
           Inicio
         </a>
-        <a href="#" className="py-2 hover:text-yellow-400">
-          Acerca
+
+        <a
+          href="#service"
+          onClick={(e) => {
+            e.preventDefault();
+            const section = document.getElementById("service");
+            if (section) {
+              section.scrollIntoView({ behavior: "smooth" });
+              setIsOpen(false);
+            }
+          }}
+          className="py-2 hover:text-button"
+        >
+          Servicios
         </a>
-        <a href="#" className="py-2 hover:text-yellow-400">
+
+        <a
+          href="#contacto"
+          onClick={(e) => {
+            e.preventDefault();
+            const section = document.getElementById("contacto");
+            if (section) {
+              section.scrollIntoView({ behavior: "smooth" });
+              setIsOpen(false);
+            }
+          }}
+          className="py-2 hover:text-button"
+        >
           Contacto
         </a>
       </div>
 
       {/* Navbar de escritorio */}
-      <div className="hidden md:flex justify-between items-center z-10">
+      <div className="hidden md:flex justify-between items-center z-10 w-full">
         {/* Logo */}
         <div className="text-xl font-semibold">LuuRepairs</div>
 
         {/* Enlaces */}
-        <div className="flex space-x-10">
-          <a href="#" className="hover:text-yellow-500">
-            Inicio
-          </a>
-          <a href="#" className="hover:text-yellow-500">
-            Servicio
-          </a>
-          <a href="#" className="hover:text-yellow-500">
-            Contacto
-          </a>
-        </div>
+        <ul className="flex gap-10">
+          <li>
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              className="hover:text-button"
+            >
+              Inicio
+            </a>
+          </li>
+          <li>
+            <a
+              href="#service"
+              onClick={(e) => {
+                e.preventDefault();
+                const section = document.getElementById("service");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+              className="hover:text-button"
+            >
+              Servicio
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contacto"
+              onClick={(e) => {
+                e.preventDefault();
+                const section = document.getElementById("contacto");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+              className="hover:text-button"
+            >
+              Contacto
+            </a>
+          </li>
+        </ul>
 
         {/* Botón WhatsApp */}
         <Btn
           className="px-4 font-medium flex items-center gap-2"
+          hoverBgColor="hover:bg-buttonHover"
           onClick={() => window.open("https://wa.me/5493777674366", "_blank")}
           hoverUnderline={true}
           bgColor="bg-white"

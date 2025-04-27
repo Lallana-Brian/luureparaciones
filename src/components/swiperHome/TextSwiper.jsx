@@ -21,14 +21,28 @@ const TextSwiper = () => {
         </button> */}
         <Btn
           text="Reserva tu reparación"
-          textColor="text-title"
+          textColor="text-body"
           borderColor="border-none"
-          disableHover={false}
           className="mt-5"
+          onClick={() => {
+            const section = document.getElementById("contacto");
+            if (section) {
+              section.scrollIntoView({ behavior: "smooth" });
+              console.log("entrando al OnClick -------");
+            }
+          }}
         />
 
-        {/* Botón Conocer más */}
-        <button className="px-5 py-2 text-lg sm:text-xl mt-4 sm:mt-0 border-none hover:text-gray-400 flex items-center space-x-2 transition-all duration-300">
+        {/* Botón Conocer más
+        <button
+          onClick={() => {
+            const section = document.getElementById("service");
+            if (section) {
+              section.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+          className="px-5 py-2 text-lg sm:text-xl mt-4 sm:mt-0 border-none hover:text-gray-400 flex items-center space-x-2 transition-all duration-300"
+        >
           <span className="text-black hover:underline sm:text-white">
             Conocer más
           </span>
@@ -36,7 +50,7 @@ const TextSwiper = () => {
             size={18} // Tamaño más pequeño para el icono en pantallas pequeñas
             className="text-black hover:text-gray-400 sm:text-white"
           />
-        </button>
+        </button> */}
       </div>
     </div>
   );

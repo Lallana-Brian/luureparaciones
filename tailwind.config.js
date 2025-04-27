@@ -29,22 +29,25 @@ export default {
       },
       colors: {
         body: "hsl(250, 60%, 98%)",
+        // CARDS
+        blue: "#e0f2fe",
         oklchBlue: "oklch(12.9% 0.042 264.695)",
+        beige: "#FFF085",
+        emerald: "#a7f3d0",
+        blancoRoto: "oklch(97.5% 0.01 0)",
+        redClaro: "#450a0a",
+
         container: "#ddd",
         title: "hsl(250, 8%, 15%)",
         subtitle: "hsl(250, 5%, 24%)",
         mycolor: "#212121",
-        beige: "#FFF085",
         header: "rgba(255, 255, 255, 0.8)",
         text: "hsl(250, 8%, 35%)",
         containerRgb: "rgba(255, 255, 255)",
         shadow: "hsla(0, 0%, 15%, 0.1)",
-        scrollbar: "hsl(250, 12%, 90%)",
-        scrollThumb: "hsl(250, 12%, 80%)",
-        first: "hsl(0, 90%, 60%)",
-        firstAlt: "hsl(0, 90%, 65%)",
-        button: "rgba(32, 32, 32)",
-        buttonHover: "rgb(58, 73, 77)",
+
+        button: "#2563eb",
+        buttonHover: "#172554",
         dark: {
           header: "rgba(32, 32, 32, 0.9)",
           title: "hsl(0, 0%, 90%)",

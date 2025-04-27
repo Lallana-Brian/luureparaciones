@@ -4,19 +4,20 @@ const Btn = ({
   onClick,
   text = "Botón",
   textColor = "text-black",
-  bgColor = "bg-beige",
-  hoverBgColor = "hover:bg-yellow-500",
-  borderColor = "border-yellow-500",
+  bgColor = "bg-button",
+  hoverBgColor = "hover:bg-buttonHover",
+  borderColor = "border-button",
   className = "",
   to = "",
   hoverUnderline = false,
   disableHover = false,
+  hoverTextColor = "hover:text-white",
 }) => {
-  const navigate = useNavigate();
+  const navigate = to ? useNavigate() : null;
 
   const handleClick = () => {
     if (onClick) onClick();
-    if (to) navigate(to);
+    if (to && navigate) navigate(to);
   };
 
   const buttonClasses = `
@@ -30,6 +31,7 @@ const Btn = ({
     ${textColor}
     ${borderColor}
     ${disableHover ? "" : hoverBgColor}
+    ${disableHover ? "" : hoverTextColor} 
     ${hoverUnderline ? "hover:underline" : ""}
     ${className}
   `;

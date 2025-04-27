@@ -12,15 +12,23 @@ function App() {
     window.scrollTo(0, 0);
   }, []);
 
+  // const { hash } = useLocation();
+
+  // useEffect(() => {
+  //   const id = hash?.replace("#", "");
+  //   const section = id && document.getElementById(id);
+  //   section?.scrollIntoView({ behavior: "smooth" });
+  // }, [hash]);
+
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
       <HomeSwiper />
       <FeaturedServices />
       <WhyChooseUs />
       <ContactForm />
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 

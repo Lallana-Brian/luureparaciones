@@ -37,15 +37,30 @@ export const featuredImages = [
     title: "Reparación de Laptops",
     subtitle: "Pantallas, teclados, sistemas operativos.",
     image: phoneImg,
-    bgColor: "bg-container",
-    textColor: "text-black",
+    bgColor: "bg-blancoRoto",
+    textColor: "text-title",
   },
   {
     title: "Instalación de software",
+    subtitle: "Instalación de sistemas operativos, programas y herramientas.",
+    image: phoneImg,
+    bgColor: "bg-emerald",
+    textColor: "text-title",
+  },
+  {
+    title: "Reparación de electrodomésticos",
+    subtitle: "Arreglamos electrodomésticos en general.",
+    image: phoneImg,
+    bgColor: "bg-redClaro",
+    textColor: "text-body",
+  },
+
+  {
+    title: "Reparación de electrodomésticos",
     subtitle: "Pantallas, teclados, sistemas operativos.",
     image: phoneImg,
-    bgColor: "bg-container",
-    textColor: "text-black",
+    bgColor: "bg-oklchBlue",
+    textColor: "text-body",
   },
 ];
 

@@ -1,8 +1,12 @@
 import React from "react";
+import Btn from "../btn/Btn";
 
 const ContactForm = () => {
   return (
-    <section className="w-full max-w-2xl mx-auto mt-20 px-4 py-10">
+    <section
+      id="contacto"
+      className="w-full max-w-2xl mx-auto mt-20 px-4 py-10"
+    >
       <h2 className="text-3xl font-bold mb-6 text-center text-gray-800">
         Contáctanos
       </h2>
@@ -80,13 +84,8 @@ const ContactForm = () => {
         </div>
 
         {/* Botón */}
-        <div className="text-center">
-          <button
-            type="submit"
-            className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"
-          >
-            Enviar
-          </button>
+        <div className="flex justify-center items-center">
+          <Btn text="Enviar" textColor="text-body" />
         </div>
       </form>
     </section>

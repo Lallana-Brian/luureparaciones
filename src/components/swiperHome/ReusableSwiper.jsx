@@ -7,7 +7,7 @@ const ReusableSwiper = () => {
   return (
     <>
       {/* Contenedor del Swiper */}
-      <div className="w-full h-[50vh] py-10 md:py-0 md:px-10 sm:h-screen mt-0 overflow-hidden relative">
+      <div className="w-full h-[50vh] py-10 md:py-0  sm:h-screen mt-0 overflow-hidden relative">
         <Swiper
           modules={[Autoplay]}
           spaceBetween={0}
